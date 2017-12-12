@@ -28,5 +28,4 @@ class Triangle
 end
 
 class TriangleError < StandardError
-  "Poop"
 end
