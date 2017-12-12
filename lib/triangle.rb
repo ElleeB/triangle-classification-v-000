@@ -19,9 +19,13 @@ class Triangle
   end
 
   def validate_triangle
+    if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 || @side_a + @side_b <= @side_c || @side_a + @side_c <= @side_b || @side_c + @side_b <= @side_a
+      raise TriangleError
+    end
   end
 
 end
 
 class TriangleError < StandardError
+  "Poop"
 end
